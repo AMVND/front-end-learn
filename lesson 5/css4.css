@@ -1,0 +1,30 @@
+#zone3, #zone4, #zone5{
+    margin: 1rem 5%;
+    border-bottom: 2px dotted red;
+}
+.abc+p{
+    color: blueviolet;
+}
+/*Bộ chọn tag01 ~ tag02*/
+ .abc~p{
+    color: blueviolet;
+}
+/*Bộ chọn ngữ cảnh
+    tag01: hover{...}
+    tag01: first-line{...}*/
+ p:hover{
+    background-color: cyan;
+    cursor: pointer;
+}
+p::first-letter{
+    font-size: 150%;
+}
+p:first-child{
+    color: blue;
+}
+p:last-child{
+    color: red;
+}
+p:nth-child(3){
+    background-color: green;
+}

@@ -1,0 +1,60 @@
+nav, nav ul, nav li, nav a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+nav{
+    height: 40px;
+    background-color: #4c4e5a;
+    border-radius: 5px;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+nav ul li a{
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+    border-left: 1px solid #393942;
+    border-right: #4f5058;
+    color: #f3f3f3;
+
+}
+nav ul li:first-child a{ border-left: none;}
+nav ul li:last-child a{ border-right: none;}
+nav ul li:hover > a {color: #8fde62}
+ul.submenu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100px;
+    opacity: 0;
+    background: #1f2024;
+    border-radius: 5%;
+
+}
+nav ul li:hover > ul.submenu{
+    opacity: 10;
+    height: auto;
+}
+.submenu li a{
+    border: none;
+    width: 100%;
+    padding: 4px 0px 4px 40px;
+    margin: 0;
+    border: none; 
+}
+.submenu li{
+    width: 100%;
+    border-bottom: 1px solid #393942;
+
+}
+.submenu li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            color: blueviolet;
+            margin: 2rem 3rem 2rem 2rem;
+            font
+        }
+        input[type="text"]{
+                width:50%;
+                border:1px solid #ddd ;
+            }
+            input[type="password"]{
+                width:50%;
+                border:1px solid #ddd ;
+            }
+            input[type="submit"]{
+                margin-top: 1rem;
+                width:50%;
+                border:1px solid #ddd ; }
+            input[type="reset"]{
+                margin-top: 1rem;
+                width:50%;
+                border:1px solid #ddd ; }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="">
+            <div>
+                <img src="../lesson 2/images/kq.jpg" alt="">
+            </div>
+            <div>
+                <label for="taikhoan">Tài khoản</label>
+                <div>
+                    <input type="text" name="taikhoan" id="taikhoan"
+                    placeholder="Nhập tài khoản ">
+                    <span id="errTk" class="error">(*)</span>
+                </div>
+                <div>
+                    <label for="matkhau">Mật khẩu</label>
+                    <div>
+                        <input type="password" name="matkhau" id="matkhau"
+                        placeholder="Nhập mật khẩu ">
+                        <span id="errMk" class="error">(*)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="ghiNho" id="ghiNho" >
+                    <label for="ghiNho">Ghi nhớ</label>
+                </div>
+                <div>
+                    <input type="submit" name="" id="" value="Đăng nhập">
+                    <br>
+                    <input type="reset" value="Nhập lại">
+                </div>
+            </div>
+        </form>
+    </center>
+   
+</body>
+</html>

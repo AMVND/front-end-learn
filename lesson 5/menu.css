@@ -1,0 +1,23 @@
+*{
+    font-family: 'Times New Roman';
+}
+nav{
+    background-color: #0082c8;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    border-right: 1px solid #ccc;
+}
+nav ul li a{
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .19);
+}

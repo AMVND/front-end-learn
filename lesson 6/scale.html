@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Scale</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            border: 5px solid red;
+            overflow: hidden;
+            position: relative;
+        }
+        div img{
+            width: 100%;
+        }
+        div:hover img{
+            transform: scale(1.5);
+            transition-duration: .5s;
+        }
+        span.over{
+            display: block;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        div:hover span.over{
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Scale</h1>
+    <div>
+        <img src="../lesson 2/images/kq.jpg" alt="kq.jpg">
+        <span class="over"></span>
+    </div>
+</body>
+</html>

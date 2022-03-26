@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí thành viên</title>
+</head>
+<body>
+    <form action="">
+        <table border="0" width="400" align="center" cellspacing="5">
+            <caption><h1>
+                Đăng kí thành viên
+            </h1></caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="hoVaTen">Họ và tên:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="hoVaTen" id="hoVaTen" placeholder="Nhập họ tên đầy đủ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tenDN">Tên đăng nhập:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="tenDN" id="tenDN" placeholder="Nhập tên đăng nhập">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="matKhau">Mật khẩu:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="matKhau" id="matKhau" placeholder="Nhập mật khẩu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="anh">Ảnh</label>
+                    </td>
+                    <td>
+                        <input type="file" name="anh" id="anh" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Nhập email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gioiTinh">Giới tính</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gt" id="gtNam">
+                        <label for="gtNam">Nam</label>
+                        <input type="radio" name="gt" id="gtNu">
+                        <label for="gtNu">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="soThich">Sở thích</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="st" id="st1" checked>
+                        <label for="st1">Bóng đá</label>
+                        <input type="checkbox" name="st" id="st2" checked>
+                        <label for="st2">Xem phim</label>
+                        <br>
+                        <input type="checkbox" name="st" id="st3" checked>
+                        <label for="st3">Anime</label>
+                        <input type="checkbox" name="st" id="st4" checked>
+                        <label for="st4">Game</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="queQuan">Quê quán</label>
+                    </td>
+                    <td>
+                        <select name="queQuan" id="queQuan">
+                            <option value="">------Chọn tỉnh thành------</option>
+                            <option value="0">Hà Nội</option>
+                            <option value="1">Hà Nội 1</option>
+                            <option value="2">Hà Nội 2</option>
+                            <option value="3">Hà Nội 3</option>
+                            <option value="4">Hà Nội 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dienthoai">Điện thoại</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="dienthoai" id="dienthoai">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mota">Mô tả</label>
+                    </td>
+                    <td>
+                        <textarea name="mota" id="mota" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr align="center">
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="submit" value="Đăng kí">
+                        <input type="reset" value="Làm lại">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

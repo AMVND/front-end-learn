@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác của css với các phần tử html</title>
+</head>
+<body>
+    <h1>Cú pháp tương tác của css với các phần tử html</h1>  
+    <hr>
+    <pre>
+        1.Tương tác thông qua tên thẻ html
+        Ví dụ
+    </pre>
+    <style>
+        h1{
+            color: #12d23d;
+        }
+        pre{
+            background-color: #ccc;
+        }
+    </style>
+    <hr>
+    <pre>
+        2.Tương tác thông qua thuộc tính id của phần tử html 
+        *Quy tắc: #ten
+        Ví dụ:
+    </pre>
+    <section id="news">
+        <h2>Bản tin cuối ngày</h2>
+    </section>
+    <style>
+        #news{
+            margin:3rem 2rem 1.5rem 2rem;
+            background-color: green;
+        }
+    </style>
+    <hr>
+    <pre>
+        3.Tương tác thông qua thuộc tính class của phần tử html 
+        *Quy tắc: .ten-class{....}
+        *VD: 
+    </pre>
+    <style>
+        .container{
+            margin: 2rem 10%;
+            border: 5px solid #faf;
+        }
+        .row{
+            background-color: cyan;
+        }
+        .bd-line{
+            border: 1px dotted red;
+            margin: 2rem;
+        }
+    </style>
+    <section id="zone1">
+        <div class="container">
+            <div class="row bd-line">
+                <div class="col">
+                    <p>CỘt nội dung dòng 1 </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>CỘt nội dung dòng 2 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <pre>
+        4.Tương tác thông qua giá trị của thuộc tính
+        *Quy tắc:
+            tag[attribute="value:"]{
+                ....
+            }
+        *Ví dụ: 
+            input[type="text"]{
+                width:100%;
+                border:1px solid #ddd ;
+            }
+    </pre>
+    <style>
+        input[type="text"]{
+                width:100%;
+                border:1px solid #ddd ;
+            }
+    </style>
+    <section id="login">
+        <form action="">
+            <input type="text">
+            <br>
+            <input type="text">
+            <br>
+            <input type="checkbox" name="" id="">
+
+        </form>
+    </section>
+    <pre>
+        Bài tập nhỏ:
+        - Thiết kế form login đơn giản
+        - Áp dụng đầy đủ các css vừa mô tả: tag, id, class, tag[attribute=...]
+    </pre>
+</body>
+</html>

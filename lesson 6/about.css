@@ -1,0 +1,27 @@
+.ava h4 {
+    font-size:  18px;
+    color: #666d89;
+    margin-right: 0;
+}
+.ava {
+    float:left;
+    width: 300px;
+    margin-right: 13px;
+}
+img {
+    border-radius: 150px;
+    border: 2px solid #666d89;
+}
+img:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+.button {
+    background-color: red;
+    border: 1px solid black;
+    width: 100px;
+}
+.button:hover{
+    background-color: #666d89;
+    transition-duration: .2s;
+}

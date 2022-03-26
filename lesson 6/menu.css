@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 1rem;
+}
+nav ul{
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: .25rem 1rem;
+    color: #000;
+}
+nav a:hover{
+    background-color: #da251c;
+    cursor: pointer;
+}
+nav ul li:first-child{
+    padding: .25rem 1rem;
+    font-weight: bolder;
+    background-color: #da251c;
+    color: #fff;
+}
