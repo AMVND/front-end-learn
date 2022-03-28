@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Nhập vào 2 số a, b (prompt)
+        //Tính toán trên 2 số a,b với các phép toán ( số học,so sánh, logic,...)
+        //In ra kết quả = console
+        a= prompt("Nhập giá trị a: ");
+        b= prompt("Nhập giá trị b: ");
+        
+        //chuyển sang dạng số
+        a=parseFloat(a);
+        b=eval(b);
+
+        //Tính toán số học
+        tong=a+b;
+        console.log(a, "+", b,"=", tong);
+        hieu=a-b;
+        console.log(a, "-", b,"=", hieu);
+        tich=a*b;
+        console.log(a, "*", b,"=", tich);
+        thuong=a%b;
+        console.log(a, ":", b,"=", thuong);       
+
+        //Phép so sánh
+        c = a==b;
+        console.log(a,"==", b, "=>", c);
+        c = a>=b;
+        console.log(a,">=", b, "=>", c);
+        c = a<=b;
+        console.log(a,"<=", b, "=>", c);
+        c = a===b;
+        console.log(a,"===", b, "=>", c);
+
+        //logic
+        c=(a>b) && (b%2==0);
+        console.log(c);
+
+        c=(a>b) || (b%2==0);
+        console.log(c);
+
+        c=!((a>b) && (b%2==0));
+        console.log(c);
+    </script>
+</body>
+</html>

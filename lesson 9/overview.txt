@@ -1,0 +1,26 @@
+Ngôn ngữ lập trình (javascript)
+- Cú pháp
+- Biến, kiểu dữ liệu, hằng, toán tử, toán hạng, biểu thức,khối lệnh,....
+- Nhập/ xuất
+- Các cấu trúc điều khiển: 3 loại cấu trúc 
+    1. Lựa chọn/ rẽ nhánh
+        a) if => chia làm 4 dạng
+
+        b)switch
+
+    2. Cấu trúc lặp
+        a) for => chia làm 4 dạng
+
+        b)while
+
+        c) do....while
+
+        d) foreach
+
+    3. Lệnh nhảy
+        break;
+        continue;
+        goto;
+        exit;
+        return;
+- Mảng

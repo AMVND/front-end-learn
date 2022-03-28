@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng JS vào trang HTML</title>
+</head>
+<body>
+    <h1 onmouseover="Myfunc()">Nhúng JS vào HTML</h1>
+    <pre>
+        1. Viết trong sự kiện của phần tử (OnClick, OnFocus,....) - inline
+        2. Viết câu lệnh trong cặp thẻ script
+        3. Viết câu lệnh trên file js
+    </pre>
+    <button onclick="alert('Hello Javascript')">Click here</button>
+
+
+    <script>
+        function Myfunc(){
+            document.bgColor='#ccc';
+        }
+    </script>
+    <script src="js01.js">
+        //sử dụng file js
+    </script>
+</body>
+</html>
