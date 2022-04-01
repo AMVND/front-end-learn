@@ -1,0 +1,27 @@
+//bài tập
+    /*
+    Nhập vào tháng, năm
+    In ra số ngày trong tháng năm đó
+    Ví dụ: 
+    tháng = 3
+    năm 2022
+
+    => in ra: tháng 3 năm 2022 có 31 ngày!
+    */
+<br>
+<!DOCTYPE html>
+    <html>
+    <body>
+        <script>
+                a=prompt("Nhập tháng");
+                b=prompt("Nhập năm");
+                var c = function(b,a) 
+                {
+                return new Date(b , a, 0).getDate();
+                };
+                c = new Date(b, a, 0).getDate();
+                document.write("Tháng" + a + "năm" + b + "có" + c + "ngày");
+        </script>    
+    </body>
+    </html>
+    

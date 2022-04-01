@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For DEMO</title>
+  </head>
+  <body>
+    <h1>For demo</h1>
+    <pre>
+        4 dạng for khác nhau:
+            for đầy đủ
+            for khuyết
+            for khuyết toàn bộ
+            for không thân
+    </pre>
+    <pre>
+        Nhập một số tự nhiên n (n>0)
+        in ra các số tự nhiên và tính tổng\
+        ----
+        nhập số tự nhiên
+        - in ra
+        - tính tổng
+
+    </pre>
+    <script>
+      /*   n= eval(prompt("Nhập số tự nhiên"));
+        tong=0;
+        for (i=0; i<=n; i++){
+            console.log(i);
+            tong=+i;
+        }
+        //lặp for khuyết 
+        tong =0;
+        for(i=0; ; ){
+            tong =+i;
+            console.log(i);
+            if(i>n)
+                break;
+        }
+        //for khuyết toàn phần 
+        tong=0;
+        i=0;
+        for (; ; ){
+            console.log(i);
+            tong+=i;
+            if(i>n)
+                break;
+        }
+        //for không thân
+        //for(init;condition;step);
+
+
+        //
+        /*while(condition){ 
+            statement;
+         } .......
+        */
+
+      /*
+        do {
+
+        }
+        while(condition)
+        */
+      //bài thực hành:
+      /* - Nhập vào số tự nhiên n
+           - In các số tự nhiên n và tính tổng các số n với n chẵn */
+
+      a = eval(prompt("Nhập số a"));
+      t = 0;
+      tc = 0;
+      tl = 0;
+      for (b = 0; b <= a; b++) {
+        console.log(b);
+        t += b;
+        if (b % 2 == 0) {
+          tc += b;
+        } else {
+          tl += b;
+        }
+      }
+      console.log("Tổng các số chẵn " + tc);
+      console.log("Tổng các số lẻ " + tl);
+      console.log("Tổng các số từ 1 đến " + a + " là " + t);
+    </script>
+  </body>
+</html>

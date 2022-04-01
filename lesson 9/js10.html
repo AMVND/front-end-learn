@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài tập 2:
+      /* 
+        Nhập vào 1 số có 2, hoặc 3 chữ số => đọc số đó ra lời Việt
+        ví dụ:
+        12 => mười hai
+        102 => Một trăm lẻ 2
+        205 => Hai trăm lẻ năm
+        115 => một trăm mười lăm
+      */
+        //khai báo biến n và yêu cầu người dùng nhập vào từ bàn phím
+            var n = eval(prompt("Nhập số có 2,3 chữ số: "));
+            var x = "";
+            if(100 <= n <= 999){
+                  var a = n % 10;
+                  var b = (parseInt(n / 10))%10;
+                  var c = parseInt(n / 100);
+                  switch(c){
+                  case 1: x += "Một Trăm  ";break;
+                  case 2: x += "Hai Trăm ";break;
+                  case 3: x += "Ba Trăm ";break;
+                  case 4: x += "Bốn Trăm ";break;
+                  case 5: x += "Năm Trăm ";break;
+                  case 6: x += "Sáu Trăm ";break;
+                  case 7: x += "Bảy Trăm ";break;
+                  case 8: x += "Tám Trăm ";break;
+                  case 9: x += "Chín Trăm ";break;
+                }
+                //in ra hàng chục
+                switch(b){
+                  case 0: x += "Lẻ ";break;
+                  case 1: x += "Mười ";break;
+                  case 2: x += "Hai mươi ";break;
+                  case 3: x += "Ba mươi ";break;
+                  case 4: x += "Bốn mươi ";break;
+                  case 5: x += "Năm mươi ";break;
+                  case 6: x += "Sáu mươi ";break;
+                  case 7: x += "Bảy mươi ";break;
+                  case 8: x += "Tám mươi ";break;
+                  case 9: x += "Chín mươi ";break;
+                }
+                //in ra hàn đơn vị
+                switch(a){
+                  case 1: x += "một ";break;
+                  case 2: x += "hai ";break;
+                  case 3: x += "ba ";break;
+                  case 4: x += "bốn ";break;
+                  case 5: x += "lăm ";break;
+                  case 6: x += "sáu ";break;
+                  case 7: x += "bảy ";break;
+                  case 8: x += "tám ";break;
+                  case 9: x += "chín ";break;
+                }
+                console.log(x);
+            }
+            else  {
+                var b = parseInt(n / 10);
+                var a = n % 10;
+                switch(b){
+                  case 1: x += "Mười ";break;
+                  case 2: x += "Hai mươi ";break;
+                  case 3: x += "Ba mươi ";break;
+                  case 4: x += "Bốn mươi ";break;
+                  case 5: x += "Năm mươi ";break;
+                  case 6: x += "Sáu mươi ";break;
+                  case 7: x += "Bảy mươi ";break;
+                  case 8: x += "Tám mươi ";break;
+                  case 9: x += "Chín mươi ";break;
+                }
+                //in ra hàn đơn vị
+                switch(a){
+                  case 1: x += "một ";break;
+                  case 2: x += "hai ";break;
+                  case 3: x += "ba ";break;
+                  case 4: x += "bốn ";break;
+                  case 5: x += "lăm ";break;
+                  case 6: x += "sáu ";break;
+                  case 7: x += "bảy ";break;
+                  case 8: x += "tám ";break;
+                  case 9: x += "chín ";break;
+                }
+                console.log(x);
+            }
+    </script>
+</body>
+</html>
