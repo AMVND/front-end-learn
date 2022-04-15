@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element trong javascript</title>
+</head>
+<body>
+    <h1 onmouseover="xuly()">DOM Element trong javascript</h1>
+    <pre>
+        Cú pháp tương tác:
+        1. Tên thẻ HTML
+            document.getElementsByTagName("tag")
+        2. Thuộc tính ID 
+            document.getElementById("id name")
+        3. Thuộc tính Class
+            document.getElementsByClassName("class name")
+        4. CSS Selector
+            document.querySelectorAll("css Selector")      
+    </pre>
+    <!---ví dụ--->
+    <div class="content" id="zone1">
+
+    </div>
+    <div id="zone2">
+        <h2> Nội dung </h2>
+    </div>
+    <script>
+       // 1. Tên thẻ HTML
+           // document.getElementsByTagName("tag")
+           document.getElementsByTagName("h1")[0].style.color= 'red';
+           document.getElementsByTagName("pre")[0].style.backgroundColor= '#ccc';
+           document.getElementsByTagName("h1")[0].innerHTML += " Toàn Gay";
+           function xuly(){
+               document.getElementsByTagName("h1")[0].style.color='blue';
+           }
+
+
+        //2. Thuộc tính ID 
+            //document.getElementById("id name")
+                document.getElementById("zone1").innerText="Super Tier GAYS";
+                document.getElementById("zone1").innerHTML += "<h2> Super Tier GAYS </h2>";
+
+
+        //3. Thuộc tính Class
+           // document.getElementsByClassName("class name")
+                document.getElementsByClassName("content")[0].style.backgroundColor='green';
+                gtr1 = document.getElementsByClassName("content")[0].innerHTML;
+                document.getElementById("zone2").innerHTML += gtr1;
+        // 4. CSS Selector
+           // document.querySelectorAll("css Selector")  
+                var node = document.querySelectorAll("div#zone2 h2");   
+                node.forEach(Element => {
+                    Element.style.color="violet"
+                })
+    </script>
+</body>
+</html>

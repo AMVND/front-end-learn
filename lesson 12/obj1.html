@@ -1,0 +1,85 @@
+<script>
+    //Sử dụng đối tượng trong javascript
+    // tạo đối tượng 
+
+
+    //CÁCH 1
+    var student = new Object();
+        // tạo thuộc tính cho đối tượng
+            student.fullName = "";
+            student.age = 0;
+            student.address = "16 Xuân Thủy";
+        // tạo hành động
+            student.print = function() {
+                document.write("<p>fullName:"+this.fullName);
+                document.write("<p>Age:"+this.age);
+                document.write("<p>Address:"+this.address);
+            }
+        //Sử dụng 
+            //Gọi thực hiện hành vi
+            student.print();
+            //Sử dụng thuộc tính 
+            student.fullName = "Đỗ Bá Toàn";
+            student.age = 21;
+            student.address = "16 Xuân Thủy";
+
+            student.print();
+
+    //CÁCH 2
+        // Sử dụng cặp ()
+        var emp = {};
+        //Thuộc tính 
+        emp.fullName = "Gay Super Tier";
+        emp.address = "16 Xuân Thủy";
+        emp.salary = 123456789 ;
+        //Phương thức
+        emp.printInfo = function(){
+            document.write("<p>fullName:"+this.fullName);
+            document.write("<p>Address:"+this.address);
+            document.write("<p>Salary:"+this.salary);
+        }
+        //Sử dụng 
+        emp.printInfo();
+
+
+        //Sử dụng thuộc tính, gán giá trị mới và sử dụng
+        //my info
+
+        emp.fullName = "Gay Super Tier";
+        emp.address = "16 Xuân Thủy";
+        emp.salary = 123456789 ;
+        emp.printInfo();
+
+
+
+    //CÁCH 3
+        var product = {
+            //Thuộc tính 
+            name: "Iporn 13 Pro Min",
+            price: 13000000,
+            qty: 100,
+            //Phương thức
+            addInfo: function(name,price,qty){
+                this.name = name;
+                this.price = price;
+                this.qty = qty;
+            },
+            printInfo: function(){
+                document.write("<p>Name:"+this.name);
+                document.write("<p>Price:"+this.price);
+                document.write("<p>QTY:"+this.qty);
+                document.write("<p>ALL:"+this.price * this.qty);
+            }
+        };
+
+        //Gọi thực hiện 
+        product.printInfo();
+        product.addInfo("Iporn 12 Pro Min", 12300000,123);
+        product.printInfo();
+
+
+        //Tạo mảng sản phẩm gồm 10 sản phẩm 
+        //In ra màn hình theo dạng bảng 
+
+        
+</script>

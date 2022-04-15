@@ -1,0 +1,39 @@
+<script>
+    //Hàm trong javascript
+    //1.Khai báo, định nghĩa hàm
+    //*) Hàm không trả về giá trị xác định
+    function display(){
+        console.log("Hàm không trả về giá trị xác định");
+    }
+    function tinhToan(a,b){
+        let c = a+b;
+        console.log(a,"+",b,"=",c);
+    }
+    //*) Hàm có giá trị trả về(sử dụng lệnh return)
+    function mayTinh(a,b,pt){
+        let c = eval(a + pt + b);
+        return c;
+    }
+    //2.Sử dụng hàm
+    display();
+    tinhToan(100,200);
+
+    kq = mayTinh(100,200,"+");
+    console.log(kq);
+    kq = mayTinh(100,200,"-");
+    console.log(kq);
+    kq = mayTinh(100,200,"*");
+    console.log(kq);
+    kq = mayTinh(100,200,"/");
+    console.log(kq);
+    kq = mayTinh(100,200,"%");
+    console.log(kq);
+
+
+    const mTinh = function(num){return num*num};
+    kq = mTinh(5);
+    console.log(kq);
+
+    const mTinh1 = (a,b) => {return a*b};
+    console.log(mTinh1(10,20));
+</script>

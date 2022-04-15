@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Review - cấu trúc lặp </h1>
+    <pre>
+        1.for
+            * 4 dạng for khác nhau
+            - for đầy đủ:
+                for (init;condition_expression;step){
+                    statement block
+                }
+            - for khuyết:
+                for(;condition_expression;step)
+                {
+                    statement block
+                }
+                for(init; ;step)
+                {
+                    statement block
+                }
+                for(init;condition_expression;)
+                {
+                    statement block
+                }
+            - for khuyết toàn bộ
+            for( ; ; )
+            {
+                statement block
+            }
+            - for không thân:
+            for(init,statement;condition_expression;step,statement)
+            {}
+        2.while
+            - syntax:
+            while(condition_expression){
+                statement block
+            }
+        3. do .... while
+            -syntax:
+                do{
+                    statement block
+                } while (condition_expression);
+
+        4. foreach
+                -syntax:
+                foreach(.....);
+
+        Ví dụ:
+        Nhập số nguyên dương n;
+        In ra và tính tổng các số nguyên tố
+    </pre>
+    <script>
+        n=eval(prompt("Nhập số n"));
+        tong=0;
+        for(let i=1; i<n; i++){
+            let flag = true; //giả sử i là số nguyên tố
+            for(let j =2; j<=i/2; j++){
+                if( i%j == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag=true){
+                tong +=i;
+                console.log(i);
+            }
+        }
+        console.log("Tổng:", tong);
+    </script>
+    <script>
+        //sử dụng foreach
+        arr = ["Hung","Dung","Sang","Trong"];
+        console.log("Danh sách");
+        for(let index in arr){
+            console.log(arr[index]);
+        }
+        console.log("================");
+        arr.foreach(x=>console.log(x));
+    </script>
+</body>
+</html>

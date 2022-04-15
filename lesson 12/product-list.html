@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+</head>
+<body>
+    <section id="productlist">
+        <h1>Danh sách sản phẩm</h1>
+        <table width="80%" border="1" cellspacing = "0" cellpadding = "5" align="center">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button onclick="loadData()">
+            LOAD DATA
+        </button>
+    </section>
+    <script>
+        var product = {
+            //Thuộc tính 
+            name: "",
+            price: 0,
+            qty: 0,
+            //Phương thức
+            addInfo: function(name,price,qty){
+                this.name = name;
+                this.price = price;
+                this.qty = qty;
+            }
+        };
+        var list = [];
+        let p = Object.create(product);
+        p.addInfo('iphone1',12345678,12);
+        list.push(p);
+        
+        p.addInfo('iphone2',12345678,12);
+        list.push(p);
+        
+        p.addInfo('iphone3',12345678,12);
+        list.push(p);
+        
+        p.addInfo('iphone4',12345678,12);
+        list.push(p);
+        
+
+        function loadData(){
+            let tbody = document.getElementsByTagName("tbody")[0];
+            let row = ``;
+            let stt = 0;
+            list.forEach(element => {
+                stt++ ;
+                let name = element.name ;
+                let price = element.price ;
+                let qty = element.qty ;
+                let money = qty * price;
+
+                
+                row += `<tr> <td>$[stt]</td>`
+                row += ` <td> $[name] </td>`
+                row += ` <td> $[price] </td>`
+                row += `<td> $[qty] </td>`
+                row += `<td> $[money] </td> </tr>`
+
+            });
+            tbody.innerHTML=row;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            /*color: blueviolet;*/
+            margin: 2rem 3rem 2rem 2rem;
+            font
+        }
+    </style>
+</head>
+<body>
+
+        <form action="">
+            <div>
+                <img src="../lesson 2/images/kq.jpg" alt="">
+            </div>
+            <div>
+                <label for="taikhoan">Tài khoản</label>
+                <div>
+                    <input type="text" name="taikhoan" id="taikhoan"
+                    placeholder="Nhập tài khoản " onclick="dangNhap()">
+                    <span id="errTk" class="error">(*)</span>
+                </div>
+                <div>
+                    <label for="matkhau">Mật khẩu</label>
+                    <div>
+                        <input type="password" name="matkhau" id="matkhau"
+                        placeholder="Nhập mật khẩu " onclick="dangNhap()">
+                        <span id="errMk" class="error">(*)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="ghiNho" id="ghiNho" >
+                    <label for="ghiNho">Ghi nhớ</label>
+                </div>
+                <div>
+                    <input type="submit" name="" id="" value="Đăng nhập" onclick="dangNhap()">
+                    
+                    <input type="reset" value="Nhập lại">
+                </div>
+            </div>
+        </form>
+    <script>
+        function dangNhap(){
+            //Lấy giá trị trên form thông qua DOM
+            let tdn = document.getElementById("taikhoan").value;
+            let mk = document.getElementById("matkhau").value;
+            //Kiểm tra tài khoản không rỗng 
+            if (tdn.trim() == ""){
+                document.getElementById("errTk").innerHTML = "<i>Bạn chưa nhập tài khoản</i>";
+            }else {
+                document.getElementById("errTk").innerHTML = "OK";
+            }
+            //Kiểm tra mật khẩu không rỗng 
+            if (mk.trim() == ""){
+                document.getElementById("errMk").innerHTML = "<i>Bạn chưa nhập mật khẩu</i>";
+                return;
+            // Mật khẩu có ít nhất 8 kí tự
+            }else if (mk.length < 8){
+                document.getElementById("errMk").innerHTML = "<i>Mật khẩu có ít nhất 8 kí tự</i>";
+            }else {
+                document.getElementById("errMk").innerHTML = "OK";
+            }
+        }
+        //BTVN:
+        //Sử dụng mô hình DOM thực hiện kiểm tra form đăng ký 
+
+    </script>
+
+
+</body>
+</html>

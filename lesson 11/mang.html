@@ -1,0 +1,71 @@
+<script>
+    //mảng trong javascript
+
+    //1.khai báo 
+    //a.Khai báo mảng rỗng
+    var arr1 = new Array();
+    //hoặc
+    arr1 = [];
+    //b.khai báo mảng và khởi tạo giá trị
+    var arr2 = new Array(10,20,30,40,100);
+    //hoặc:
+    arr3 = [10,30,20,40,100,50];
+
+    //2.Truy xuất
+    //sử dụng tên biến mảng, chỉ số 
+    console.log("Vị trí",3,"Giá trị=", arr2[3]);  //40
+    console.log(arr3);
+    //Gán giá trị trị
+    arr3[6]=300;
+    console.log(arr3);
+
+    //3.Duyệt mảng
+    //Sử dụng vòng lặp
+    for(let i=0; i<arr3.length; i++){
+        console.log(arr3[i]);
+    }
+    console.log("============");
+    arr3.forEach(x =>console.log(x));
+
+    //4.Xử lý yêu cầu cụ thể 
+    //Ví dụ:
+    /* 
+    - Sinh mảng ngẫu nhiên các số nguyên có 2 chữ số ( random in javascript)
+    - In các phần tử trong mảng
+    - Tính tổng các phần tử tại vị trí lẻ và có giá trị là số chẵn 
+    */
+
+</script>
+<script>
+      var mang=[];
+      for (let i =0; i<10; i++){
+          let n = Math.floor(Math.random()*90 -1) +10;
+          mang[i] = n;
+      }
+      console.log(mang);
+      tong=0;
+      for(let i=0; i<10; i+=2){
+        if(mang[i] %2 ==0){
+            tong+=mang[i];
+        }
+      }
+      console.log("Tổng",tong);
+
+    /*
+    push()
+    */
+    mang.push(123);
+    console.log(mang);
+
+    /* pop*/
+    mang.pop();
+    console.log(mang);
+
+    /*Shift*/
+    mang.shift();
+    console.log(mang);
+
+    /*unShift*/
+    mang.unshift(200);
+    console.log(mang);
+</script>
