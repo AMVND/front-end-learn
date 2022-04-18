@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <h1>Regular Expression</h1>
+    <script>
+     /* var regx = /Devmaster/i;
+      str = "Chào mừng bạn đến với Devmaster Academy";
+      if (regx.test(str)) {
+        document.write("<p>Có chứa");
+      } else {
+        document.write("<p> Chuỗi" + str + "không chứa");
+      }
+
+      regx = /[a-d]+/;
+      str = "ghikabada";
+
+      if (regx.test(str)) {
+        document.write("<p>Có chứa");
+      } else {
+        document.write("<p> Chuỗi" + str + "không chứa");
+      }
+
+      //email mẫu
+
+      const checkEmail = (strInput) => {
+        //let regEmail = /[a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}$/i;
+        //let regEmail = /([a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}$) | ([a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}[.][a-a-zA-Z]{2}$)/i;
+        let regEmail = /(^[a-zA-Z0-9_]+[.]*[a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,4}$)|(^[a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}[.][a-a-zA-Z]{2}$)/i;
+
+        if (regEmail.test(strInput)) {
+          document.write("<p>Đúng địa chỉ email:  " +strInput);
+        } else {
+            document.write("<p>Sai địa chỉ email:  " +strInput);
+        }
+      };
+
+      checkEmail("anivnmusicvideo@gmail.com");
+      checkEmail("anivnmusicvideo@gmail.com.vn");
+      checkEmail("anivn.music.video@gmail.com");
+      checkEmail("anivn.music_video@gmail.com");
+      checkEmail("anivn..musicvideo@gmail.com");*/
+
+
+      //bài tập : test phone
+      //(+84) xxxx-xxx-xxx : x là các số từ 0 đến 9
+
+      const checkPhone = (strInput1) => {
+        let regPhone = /[(+84)][0-9]{4}[-][0-9]{3}[-][0-9]{3}/;
+
+        if (regPhone.test(strInput1)) {
+          document.write("<p>Đúng:  " +strInput1);
+        } else {
+            document.write("<p>Sai:  " +strInput1);
+        }}
+        checkPhone("(+84)1234-567-891");
+    </script>
+  </body>
+</html>

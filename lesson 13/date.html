@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime</title>
+</head>
+<body>
+    <h1>Hàm xử lý thời gian</h1>
+    <h2><p id="demo"></p></h2>
+    <script>
+        //đối tượng Date
+        date = new Date();
+        document.write("Haha: "+date);
+        document.write("<p>Hôm nay, : "+date.toString);
+
+        //Các hàm trích thành phần
+        dd = date.getDate();
+        MM = date.getMonth()+1;
+        yy = date.getFullYear();
+        dd = (dd<10)? "0"+dd: dd;
+        MM = (MM<10)? "0"+MM: MM;
+
+        day = date.getDay()+1 ;
+        str = "Thứ " + day + " ngày " + dd + "/ " + MM + "/ " +yy;
+        document.write("<p>Hôm nay, " + str );
+
+            hh = date.getHours();
+            hh = (hh<10)? "0"+hh: hh;
+            mm = date.getMinutes();
+            mm = (mm<10)? "0"+mm: mm;
+            ss = date.getSeconds();
+            ss = (ss<10)? "0"+ss: ss;
+
+        str1 = "là " + hh + " giờ " + mm + " phút " + ss + " giây " ;
+        document.write("<p>Bây giờ " + str1 );
+
+
+        //làm sao cho nó chạy như đồng hồ hệ thống 
+        //setTimeOut / setInterval
+
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+        const date = new Date();
+        document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>
